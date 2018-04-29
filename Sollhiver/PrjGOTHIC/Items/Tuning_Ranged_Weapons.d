@@ -1,6 +1,8 @@
 
-const int Value_Pfeil = 10;
-const int Value_Bolzen = 15;
+// l'hiver 10, vanilla 1
+const int Value_Pfeil = 5;
+const int Value_Bolzen = 5;
+//
 const int Damage_MilArmbrust = 45;
 const int Condition_MilArmbrust = 30;
 const int Value_MilArmbrust = 200;

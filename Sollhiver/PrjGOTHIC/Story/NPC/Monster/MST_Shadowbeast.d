@@ -4,11 +4,11 @@ prototype Mst_Default_Shadowbeast(C_Npc)
 	name[0] = "Shadowbeast";
 	guild = GIL_SHADOWBEAST;
 	aivar[AIV_MM_REAL_ID] = ID_SHADOWBEAST;
-	level = 40;
-	attribute[ATR_STRENGTH] = 250;
-	attribute[ATR_DEXTERITY] = 250;
-	attribute[ATR_HITPOINTS_MAX] = 550;
-	attribute[ATR_HITPOINTS] = 550;
+	level = 35;
+	attribute[ATR_STRENGTH] = 200;
+	attribute[ATR_DEXTERITY] = 200;
+	attribute[ATR_HITPOINTS_MAX] = 450;
+	attribute[ATR_HITPOINTS] = 450;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 125;
@@ -50,7 +50,7 @@ instance BeachShadowbeast1(Mst_Default_Shadowbeast)
 	Npc_SetToFistMode(self);
 };
 
-instance shadowbeasttransform(Mst_Default_Shadowbeast)
+instance SHADOWBEASTTRANSFORM(Mst_Default_Shadowbeast)
 {
 	Npc_PercEnable(self,PERC_ASSESSSURPRISE,b_stopmagictransform);
 	B_SetVisuals_Shadowbeast();

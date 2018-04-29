@@ -7,8 +7,8 @@ prototype Mst_Default_Skeleton(C_Npc)
 	level = 30;
 	attribute[ATR_STRENGTH] = 100;
 	attribute[ATR_DEXTERITY] = 150;
-	attribute[ATR_HITPOINTS_MAX] = 340;
-	attribute[ATR_HITPOINTS] = 340;
+	attribute[ATR_HITPOINTS_MAX] = 250;
+	attribute[ATR_HITPOINTS] = 250;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 75;
@@ -103,7 +103,7 @@ instance Lesser_Skeleton(Mst_Default_Skeleton)
 	EquipItem(self,ItMw_1h_MISC_Sword);
 };
 
-instance raven_guard(Mst_Default_Skeleton)
+instance RAVEN_GUARD(Mst_Default_Skeleton)
 {
 	name[0] = "Raven's guard";
 	aivar[AIV_EnemyOverride] = FALSE;

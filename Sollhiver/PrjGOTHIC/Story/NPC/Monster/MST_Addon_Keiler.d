@@ -7,8 +7,8 @@ prototype Mst_Default_Keiler(C_Npc)
 	level = 9;
 	attribute[ATR_STRENGTH] = 50;
 	attribute[ATR_DEXTERITY] = 50;
-	attribute[ATR_HITPOINTS_MAX] = 200;
-	attribute[ATR_HITPOINTS] = 200;
+	attribute[ATR_HITPOINTS_MAX] = 150;
+	attribute[ATR_HITPOINTS] = 150;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 50;

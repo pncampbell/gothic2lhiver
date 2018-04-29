@@ -7,8 +7,8 @@ prototype Mst_Default_Snapper(C_Npc)
 	level = 12;
 	attribute[ATR_STRENGTH] = 85;
 	attribute[ATR_DEXTERITY] = 85;
-	attribute[ATR_HITPOINTS_MAX] = 220;
-	attribute[ATR_HITPOINTS] = 220;
+	attribute[ATR_HITPOINTS_MAX] = 200;
+	attribute[ATR_HITPOINTS] = 200;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 60;
@@ -128,7 +128,7 @@ instance Grimbald_Snapper3(Mst_Default_Snapper)
 	Npc_SetToFistMode(self);
 };
 
-instance snappertransform(Mst_Default_Snapper)
+instance SNAPPERTRANSFORM(Mst_Default_Snapper)
 {
 	Npc_PercEnable(self,PERC_ASSESSSURPRISE,b_stopmagictransform);
 	B_SetVisuals_Snapper();

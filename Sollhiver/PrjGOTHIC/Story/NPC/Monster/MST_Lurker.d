@@ -7,8 +7,8 @@ prototype Mst_Default_Lurker(C_Npc)
 	level = 12;
 	attribute[ATR_STRENGTH] = 90;
 	attribute[ATR_DEXTERITY] = 90;
-	attribute[ATR_HITPOINTS_MAX] = 240;
-	attribute[ATR_HITPOINTS] = 240;
+	attribute[ATR_HITPOINTS_MAX] = 200;
+	attribute[ATR_HITPOINTS] = 200;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 60;
@@ -107,7 +107,7 @@ instance BeachLurker3(Mst_Default_Lurker)
 	Npc_SetToFistMode(self);
 };
 
-instance lurkertransform(Mst_Default_Lurker)
+instance LURKERTRANSFORM(Mst_Default_Lurker)
 {
 	Npc_PercEnable(self,PERC_ASSESSSURPRISE,b_stopmagictransform);
 	B_SetVisuals_Lurker();

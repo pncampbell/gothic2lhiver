@@ -6,9 +6,9 @@ prototype Mst_Default_Draconian(C_Npc)
 	aivar[AIV_MM_REAL_ID] = ID_DRACONIAN;
 	level = 35;
 	attribute[ATR_STRENGTH] = 125;
-	attribute[ATR_DEXTERITY] = 150;
-	attribute[ATR_HITPOINTS_MAX] = 400;
-	attribute[ATR_HITPOINTS] = 400;
+	attribute[ATR_DEXTERITY] = 140;
+	attribute[ATR_HITPOINTS_MAX] = 300;
+	attribute[ATR_HITPOINTS] = 300;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 130;

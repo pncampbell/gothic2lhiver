@@ -7,8 +7,8 @@ prototype Mst_Default_Troll_Black(C_Npc)
 	level = 100;
 	attribute[ATR_STRENGTH] = 200;
 	attribute[ATR_DEXTERITY] = 200;
-	attribute[ATR_HITPOINTS_MAX] = 1750;
-	attribute[ATR_HITPOINTS] = 1750;
+	attribute[ATR_HITPOINTS_MAX] = 1300;
+	attribute[ATR_HITPOINTS] = 1300;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 150;

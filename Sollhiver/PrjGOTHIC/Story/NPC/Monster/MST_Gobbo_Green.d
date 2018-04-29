@@ -5,10 +5,10 @@ prototype Mst_Default_Gobbo_Green(C_Npc)
 	guild = GIL_GOBBO;
 	aivar[AIV_MM_REAL_ID] = ID_GOBBO_GREEN;
 	level = 6;
-	attribute[ATR_STRENGTH] = 60;
-	attribute[ATR_DEXTERITY] = 60;
-	attribute[ATR_HITPOINTS_MAX] = 120;
-	attribute[ATR_HITPOINTS] = 120;
+	attribute[ATR_STRENGTH] = 30;
+	attribute[ATR_DEXTERITY] = 30;
+	attribute[ATR_HITPOINTS_MAX] = 60;
+	attribute[ATR_HITPOINTS] = 60;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 20;

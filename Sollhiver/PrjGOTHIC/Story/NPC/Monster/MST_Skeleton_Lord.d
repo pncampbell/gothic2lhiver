@@ -5,11 +5,11 @@ prototype Mst_Skeleton_Lord(C_Npc)
 	guild = GIL_SKELETON;
 	aivar[AIV_MM_REAL_ID] = ID_SKELETON;
 	aivar[90] = TRUE;
-	level = 50;
-	attribute[ATR_STRENGTH] = 175;
+	level = 45;
+	attribute[ATR_STRENGTH] = 150;
 	attribute[ATR_DEXTERITY] = 100;
-	attribute[ATR_HITPOINTS_MAX] = 700;
-	attribute[ATR_HITPOINTS] = 700;
+	attribute[ATR_HITPOINTS_MAX] = 600;
+	attribute[ATR_HITPOINTS] = 600;
 	attribute[ATR_MANA_MAX] = 200;
 	attribute[ATR_MANA] = 200;
 	protection[PROT_BLUNT] = 90;

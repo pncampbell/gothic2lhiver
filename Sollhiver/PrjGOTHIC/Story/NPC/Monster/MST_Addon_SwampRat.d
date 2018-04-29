@@ -7,8 +7,8 @@ prototype Mst_Default_Swamprat(C_Npc)
 	level = 14;
 	attribute[ATR_STRENGTH] = 60;
 	attribute[ATR_DEXTERITY] = 60;
-	attribute[ATR_HITPOINTS_MAX] = 220;
-	attribute[ATR_HITPOINTS] = 220;
+	attribute[ATR_HITPOINTS_MAX] = 180;
+	attribute[ATR_HITPOINTS] = 180;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 60;

@@ -42,7 +42,7 @@ instance FireWaran(Mst_Default_FireWaran)
 	Npc_SetToFistMode(self);
 };
 
-instance firewarantransform(Mst_Default_FireWaran)
+instance FIREWARANTRANSFORM(Mst_Default_FireWaran)
 {
 	Npc_PercEnable(self,PERC_ASSESSSURPRISE,b_stopmagictransform);
 	B_Setvisuals_FireWaran();

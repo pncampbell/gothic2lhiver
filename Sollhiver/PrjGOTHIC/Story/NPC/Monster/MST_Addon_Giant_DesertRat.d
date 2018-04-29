@@ -7,8 +7,8 @@ prototype Mst_Default_Giant_DesertRat(C_Npc)
 	level = 13;
 	attribute[ATR_STRENGTH] = 75;
 	attribute[ATR_DEXTERITY] = 75;
-	attribute[ATR_HITPOINTS_MAX] = 175;
-	attribute[ATR_HITPOINTS] = 175;
+	attribute[ATR_HITPOINTS_MAX] = 130;
+	attribute[ATR_HITPOINTS] = 130;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 75;

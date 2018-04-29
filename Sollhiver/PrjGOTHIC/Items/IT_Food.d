@@ -1,4 +1,8 @@
 
+// simple/raw foods - fixed HP bonus
+// processed foods - small % bonus
+// meals - moderate % bonus
+
 const int Value_Apple = 8;
 const int HP_Apple = 5;
 const int Value_Cheese = 23;
@@ -7,15 +11,15 @@ const int Value_Bacon = 50;
 const int HP_Bacon = 20;
 const int Value_Bread = 20;
 const int HP_Bread = 10;
-const int Value_Fish = 21;
+const int Value_Fish = 10;
 const int HP_Fish = 5;
-const int Value_Rawmeat = 23;
+const int Value_Rawmeat = 10;
 const int HP_RawMeat = 6;
 const int Value_Meat = 30;
 const int HP_Meat = 12;
-const int Value_Stew = 40;
+const int Value_Stew = 35;
 const int HP_Stew = 20;
-const int Value_FishSoup = 35;
+const int Value_FishSoup = 25;
 const int HP_FishSoup = 10;
 const int Value_Sausage = 30;
 const int HP_Sausage = 12;
@@ -49,7 +53,7 @@ instance ItFo_Apple(C_Item)
 	description = name;
 	text[1] = NAME_BONUS_HPNP;
 	count[1] = HP_Apple;
-	text[3] = "A fresh apple,";
+	text[3] = "An apple,";
 	text[4] = "firm and juicy.";
 	text[5] = NAME_Value;
 	count[5] = Value_Apple;
@@ -121,7 +125,7 @@ instance ItFo_Bacon(C_Item)
 	scemeName = "FOODHUGE";
 	on_state[0] = Use_Bacon;
 	description = name;
-	text[1] = NAME_BONUS_HP_30;
+	text[1] = NAME_BONUS_HP_15;
 	text[5] = NAME_Value;
 	count[5] = Value_Bacon;
 };
@@ -130,7 +134,7 @@ instance ItFo_Bacon(C_Item)
 func void Use_Bacon()
 {
 	var int hpres;
-	hpres = 0 + ((self.attribute[ATR_HITPOINTS_MAX] * 30) / 100);
+	hpres = 0 + ((self.attribute[ATR_HITPOINTS_MAX] * 15) / 100);
 	Npc_ChangeAttribute(self,ATR_HITPOINTS,hpres);
 	if(self.attribute[ATR_HITPOINTS] > self.attribute[ATR_HITPOINTS_MAX])
 	{
@@ -179,7 +183,8 @@ instance ItFo_Fish(C_Item)
 	scemeName = "FOODHUGE";
 	on_state[0] = Use_Fish;
 	description = name;
-	text[1] = "Restores 11 % of health";
+	text[1] = NAME_Bonus_HP;
+	count[1] = HP_Fish;
 	text[5] = NAME_Value;
 	count[5] = Value_Fish;
 };
@@ -187,13 +192,7 @@ instance ItFo_Fish(C_Item)
 
 func void Use_Fish()
 {
-	var int hpres;
-	hpres = 0 + ((self.attribute[ATR_HITPOINTS_MAX] * 11) / 100);
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,hpres);
-	if(self.attribute[ATR_HITPOINTS] > self.attribute[ATR_HITPOINTS_MAX])
-	{
-		self.attribute[ATR_HITPOINTS] = self.attribute[ATR_HITPOINTS_MAX];
-	};
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_Fish);
 };
 
 
@@ -208,7 +207,8 @@ instance ItFoMuttonRaw(C_Item)
 	scemeName = "MEAT";
 	on_state[0] = Use_RawMeat;
 	description = name;
-	text[1] = NAME_BONUS_HP_15;
+	text[1] = NAME_Bonus_HP;
+	count[1] = HP_RawMeat;
 	text[5] = NAME_Value;
 	count[5] = Value_Rawmeat;
 };
@@ -216,13 +216,7 @@ instance ItFoMuttonRaw(C_Item)
 
 func void Use_RawMeat()
 {
-	var int hpres;
-	hpres = 0 + ((self.attribute[ATR_HITPOINTS_MAX] * 15) / 100);
-	Npc_ChangeAttribute(self,ATR_HITPOINTS,hpres);
-	if(self.attribute[ATR_HITPOINTS] > self.attribute[ATR_HITPOINTS_MAX])
-	{
-		self.attribute[ATR_HITPOINTS] = self.attribute[ATR_HITPOINTS_MAX];
-	};
+	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_RawMeat);
 };
 
 
@@ -266,7 +260,7 @@ instance ItFo_Stew(C_Item)
 	scemeName = "RICE";
 	on_state[0] = Use_Stew;
 	description = name;
-	text[1] = NAME_BONUS_HP_30;
+	text[1] = NAME_BONUS_HP_25;
 	text[5] = NAME_Value;
 	count[5] = Value_Stew;
 };
@@ -275,7 +269,7 @@ instance ItFo_Stew(C_Item)
 func void Use_Stew()
 {
 	var int hpres;
-	hpres = 0 + ((self.attribute[ATR_HITPOINTS_MAX] * 30) / 100);
+	hpres = 0 + ((self.attribute[ATR_HITPOINTS_MAX] * 25) / 100);
 	Npc_ChangeAttribute(self,ATR_HITPOINTS,hpres);
 	if(self.attribute[ATR_HITPOINTS] > self.attribute[ATR_HITPOINTS_MAX])
 	{
@@ -295,7 +289,7 @@ instance ItFo_XPStew(C_Item)
 	scemeName = "RICE";
 	on_state[0] = Use_XPStew;
 	description = name;
-	text[1] = NAME_BONUS_HP_40;
+	text[1] = NAME_BONUS_HP_30;
 	text[2] = NAME_Bonus_Str;
 	count[2] = 1;
 	text[5] = NAME_Value;
@@ -306,7 +300,7 @@ instance ItFo_XPStew(C_Item)
 func void Use_XPStew()
 {
 	var int hpres;
-	hpres = 0 + ((self.attribute[ATR_HITPOINTS_MAX] * 40) / 100);
+	hpres = 0 + ((self.attribute[ATR_HITPOINTS_MAX] * 30) / 100);
 	Npc_ChangeAttribute(self,ATR_HITPOINTS,hpres);
 	if(self.attribute[ATR_HITPOINTS] > self.attribute[ATR_HITPOINTS_MAX])
 	{

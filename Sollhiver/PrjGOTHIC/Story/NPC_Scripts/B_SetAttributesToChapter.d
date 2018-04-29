@@ -5,15 +5,15 @@ func void B_SetAttributesToChapter(var C_Npc slf,var int kap)
 	if(kap == 0)
 	{
 		slf.level = 3;
-		slf.attribute[ATR_STRENGTH] = 20;
-		slf.aivar[REAL_STRENGTH] = 20;
-		slf.attribute[ATR_DEXTERITY] = 20;
+		slf.attribute[ATR_STRENGTH] = 15;
+		slf.aivar[REAL_STRENGTH] = 15;
+		slf.attribute[ATR_DEXTERITY] = 15;
 		slf.aivar[REAL_DEXTERITY] = 20;
 		slf.attribute[ATR_MANA_MAX] = 1000;
 		slf.aivar[REAL_MANA_MAX] = 1000;
 		slf.attribute[ATR_MANA] = 1000;
-		slf.attribute[ATR_HITPOINTS_MAX] = 100;
-		slf.attribute[ATR_HITPOINTS] = 100;
+		slf.attribute[ATR_HITPOINTS_MAX] = 60;
+		slf.attribute[ATR_HITPOINTS] = 60;
 	};
 	if(kap == 1)
 	{
@@ -25,8 +25,8 @@ func void B_SetAttributesToChapter(var C_Npc slf,var int kap)
 		slf.attribute[ATR_MANA_MAX] = 1000;
 		slf.aivar[REAL_MANA_MAX] = 1000;
 		slf.attribute[ATR_MANA] = 1000;
-		slf.attribute[ATR_HITPOINTS_MAX] = 250;
-		slf.attribute[ATR_HITPOINTS] = 250;
+		slf.attribute[ATR_HITPOINTS_MAX] = 200;
+		slf.attribute[ATR_HITPOINTS] = 200;
 	};
 	if(kap == 2)
 	{
@@ -38,8 +38,8 @@ func void B_SetAttributesToChapter(var C_Npc slf,var int kap)
 		slf.attribute[ATR_MANA_MAX] = 1000;
 		slf.aivar[REAL_MANA_MAX] = 1000;
 		slf.attribute[ATR_MANA] = 1000;
-		slf.attribute[ATR_HITPOINTS_MAX] = 400;
-		slf.attribute[ATR_HITPOINTS] = 400;
+		slf.attribute[ATR_HITPOINTS_MAX] = 320;
+		slf.attribute[ATR_HITPOINTS] = 320;
 	};
 	if(kap == 3)
 	{
@@ -51,8 +51,8 @@ func void B_SetAttributesToChapter(var C_Npc slf,var int kap)
 		slf.attribute[ATR_MANA_MAX] = 1000;
 		slf.aivar[REAL_MANA_MAX] = 1000;
 		slf.attribute[ATR_MANA] = 1000;
-		slf.attribute[ATR_HITPOINTS_MAX] = 550;
-		slf.attribute[ATR_HITPOINTS] = 550;
+		slf.attribute[ATR_HITPOINTS_MAX] = 400;
+		slf.attribute[ATR_HITPOINTS] = 400;
 	};
 	if(kap == 4)
 	{
@@ -64,8 +64,8 @@ func void B_SetAttributesToChapter(var C_Npc slf,var int kap)
 		slf.attribute[ATR_MANA_MAX] = 1000;
 		slf.attribute[ATR_MANA] = 1000;
 		slf.aivar[REAL_MANA_MAX] = 1000;
-		slf.attribute[ATR_HITPOINTS_MAX] = 700;
-		slf.attribute[ATR_HITPOINTS] = 700;
+		slf.attribute[ATR_HITPOINTS_MAX] = 520;
+		slf.attribute[ATR_HITPOINTS] = 520;
 	};
 	if(kap == 5)
 	{
@@ -77,8 +77,8 @@ func void B_SetAttributesToChapter(var C_Npc slf,var int kap)
 		slf.attribute[ATR_MANA_MAX] = 1000;
 		slf.aivar[REAL_MANA_MAX] = 1000;
 		slf.attribute[ATR_MANA] = 1000;
-		slf.attribute[ATR_HITPOINTS_MAX] = 850;
-		slf.attribute[ATR_HITPOINTS] = 850;
+		slf.attribute[ATR_HITPOINTS_MAX] = 640;
+		slf.attribute[ATR_HITPOINTS] = 640;
 	};
 	if(kap >= 6)
 	{
@@ -90,8 +90,8 @@ func void B_SetAttributesToChapter(var C_Npc slf,var int kap)
 		slf.attribute[ATR_MANA_MAX] = 1000;
 		slf.aivar[REAL_MANA_MAX] = 1000;
 		slf.attribute[ATR_MANA] = 1000;
-		slf.attribute[ATR_HITPOINTS_MAX] = 1000;
-		slf.attribute[ATR_HITPOINTS] = 1000;
+		slf.attribute[ATR_HITPOINTS_MAX] = 800;
+		slf.attribute[ATR_HITPOINTS] = 800;
 	};
 	if(kap == 7)
 	{
@@ -103,8 +103,8 @@ func void B_SetAttributesToChapter(var C_Npc slf,var int kap)
 		slf.attribute[ATR_MANA_MAX] = 1000;
 		slf.aivar[REAL_MANA_MAX] = 1000;
 		slf.attribute[ATR_MANA] = 1000;
-		slf.attribute[ATR_HITPOINTS_MAX] = 1250;
-		slf.attribute[ATR_HITPOINTS] = 1250;
+		slf.attribute[ATR_HITPOINTS_MAX] = 1000;
+		slf.attribute[ATR_HITPOINTS] = 1000;
 	};
 	if(kap == 8)
 	{
@@ -116,8 +116,8 @@ func void B_SetAttributesToChapter(var C_Npc slf,var int kap)
 		slf.attribute[ATR_MANA_MAX] = 1000;
 		slf.aivar[REAL_MANA_MAX] = 1000;
 		slf.attribute[ATR_MANA] = 1000;
-		slf.attribute[ATR_HITPOINTS_MAX] = 1400;
-		slf.attribute[ATR_HITPOINTS] = 1400;
+		slf.attribute[ATR_HITPOINTS_MAX] = 1200;
+		slf.attribute[ATR_HITPOINTS] = 1200;
 	};
 	slf.exp = 500 * ((slf.level + 1) / 2) * (slf.level + 1);
 	slf.exp_next = 500 * ((slf.level + 2) / 2) * (slf.level + 1);

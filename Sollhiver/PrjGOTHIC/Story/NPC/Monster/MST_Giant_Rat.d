@@ -5,10 +5,10 @@ prototype Mst_Default_Giant_Rat(C_Npc)
 	guild = GIL_Giant_Rat;
 	aivar[AIV_MM_REAL_ID] = ID_Giant_Rat;
 	level = 5;
-	attribute[ATR_STRENGTH] = 30;
-	attribute[ATR_DEXTERITY] = 30;
-	attribute[ATR_HITPOINTS_MAX] = 110;
-	attribute[ATR_HITPOINTS] = 110;
+	attribute[ATR_STRENGTH] = 20;
+	attribute[ATR_DEXTERITY] = 20;
+	attribute[ATR_HITPOINTS_MAX] = 70;
+	attribute[ATR_HITPOINTS] = 70;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 15;
@@ -48,8 +48,8 @@ instance YGiant_Rat(Mst_Default_Giant_Rat)
 	level = 3;
 	attribute[ATR_STRENGTH] = 15;
 	attribute[ATR_DEXTERITY] = 15;
-	attribute[ATR_HITPOINTS_MAX] = 40;
-	attribute[ATR_HITPOINTS] = 40;
+	attribute[ATR_HITPOINTS_MAX] = 30;
+	attribute[ATR_HITPOINTS] = 30;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 5;
@@ -64,7 +64,7 @@ instance YGiant_Rat(Mst_Default_Giant_Rat)
 	Npc_SetToFistMode(self);
 };
 
-instance giant_rattransform(Mst_Default_Giant_Rat)
+instance GIANT_RATTRANSFORM(Mst_Default_Giant_Rat)
 {
 	Npc_PercEnable(self,PERC_ASSESSSURPRISE,b_stopmagictransform);
 	B_SetVisuals_Giant_Rat();

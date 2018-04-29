@@ -5,10 +5,10 @@ prototype Mst_Default_Scavenger(C_Npc)
 	guild = GIL_SCAVENGER;
 	aivar[AIV_MM_REAL_ID] = ID_SCAVENGER;
 	level = 7;
-	attribute[ATR_STRENGTH] = 65;
-	attribute[ATR_DEXTERITY] = 65;
-	attribute[ATR_HITPOINTS_MAX] = 140;
-	attribute[ATR_HITPOINTS] = 140;
+	attribute[ATR_STRENGTH] = 50;
+	attribute[ATR_DEXTERITY] = 50;
+	attribute[ATR_HITPOINTS_MAX] = 100;
+	attribute[ATR_HITPOINTS] = 100;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 35;
@@ -44,7 +44,7 @@ instance Scavenger(Mst_Default_Scavenger)
 	Npc_SetToFistMode(self);
 };
 
-instance scavengertransform(Mst_Default_Scavenger)
+instance SCAVENGERTRANSFORM(Mst_Default_Scavenger)
 {
 	Npc_PercEnable(self,PERC_ASSESSSURPRISE,b_stopmagictransform);
 	B_SetVisuals_Scavenger();

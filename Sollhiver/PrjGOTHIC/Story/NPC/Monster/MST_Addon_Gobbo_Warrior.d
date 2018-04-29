@@ -7,8 +7,8 @@ prototype Mst_Default_Gobbo_Warrior(C_Npc)
 	level = 18;
 	attribute[ATR_STRENGTH] = 85;
 	attribute[ATR_DEXTERITY] = 85;
-	attribute[ATR_HITPOINTS_MAX] = 275;
-	attribute[ATR_HITPOINTS] = 275;
+	attribute[ATR_HITPOINTS_MAX] = 225;
+	attribute[ATR_HITPOINTS] = 225;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 75;

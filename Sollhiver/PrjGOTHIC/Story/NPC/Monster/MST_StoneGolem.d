@@ -7,8 +7,8 @@ prototype Mst_Default_StoneGolem(C_Npc)
 	level = 25;
 	attribute[ATR_STRENGTH] = 125;
 	attribute[ATR_DEXTERITY] = 125;
-	attribute[ATR_HITPOINTS_MAX] = 400;
-	attribute[ATR_HITPOINTS] = 400;
+	attribute[ATR_HITPOINTS_MAX] = 300;
+	attribute[ATR_HITPOINTS] = 300;
 	attribute[ATR_MANA_MAX] = 100;
 	attribute[ATR_MANA] = 100;
 	protection[PROT_BLUNT] = 50;

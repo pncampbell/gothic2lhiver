@@ -7,8 +7,8 @@ prototype Mst_Default_Harpie(C_Npc)
 	level = 20;
 	attribute[ATR_STRENGTH] = 110;
 	attribute[ATR_DEXTERITY] = 110;
-	attribute[ATR_HITPOINTS_MAX] = 280;
-	attribute[ATR_HITPOINTS] = 280;
+	attribute[ATR_HITPOINTS_MAX] = 240;
+	attribute[ATR_HITPOINTS] = 240;
 	attribute[ATR_MANA_MAX] = 100;
 	attribute[ATR_MANA] = 100;
 	protection[PROT_BLUNT] = 110;

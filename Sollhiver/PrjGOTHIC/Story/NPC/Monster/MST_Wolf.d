@@ -5,10 +5,10 @@ prototype Mst_Default_Wolf(C_Npc)
 	guild = GIL_WOLF;
 	aivar[AIV_MM_REAL_ID] = ID_WOLF;
 	level = 9;
-	attribute[ATR_STRENGTH] = 70;
-	attribute[ATR_DEXTERITY] = 70;
-	attribute[ATR_HITPOINTS_MAX] = 180;
-	attribute[ATR_HITPOINTS] = 180;
+	attribute[ATR_STRENGTH] = 50;
+	attribute[ATR_DEXTERITY] = 50;
+	attribute[ATR_HITPOINTS_MAX] = 120;
+	attribute[ATR_HITPOINTS] = 120;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 30;
@@ -48,10 +48,10 @@ instance Summoned_Wolf(Mst_Default_Wolf)
 	guild = gil_summoned_wolf;
 	aivar[AIV_MM_REAL_ID] = id_summoned_wolf;
 	level = 0;
-	attribute[ATR_STRENGTH] = 90;
-	attribute[ATR_DEXTERITY] = 90;
-	attribute[ATR_HITPOINTS_MAX] = 200;
-	attribute[ATR_HITPOINTS] = 200;
+	attribute[ATR_STRENGTH] = 50;
+	attribute[ATR_DEXTERITY] = 50;
+	attribute[ATR_HITPOINTS_MAX] = 100;
+	attribute[ATR_HITPOINTS] = 100;
 	protection[PROT_BLUNT] = 75;
 	protection[PROT_EDGE] = 75;
 	protection[PROT_POINT] = 25;
@@ -64,7 +64,7 @@ instance Summoned_Wolf(Mst_Default_Wolf)
 	Npc_SetToFistMode(self);
 };
 
-instance wolftransform(Mst_Default_Wolf)
+instance WOLFTRANSFORM(Mst_Default_Wolf)
 {
 	Npc_PercEnable(self,PERC_ASSESSSURPRISE,b_stopmagictransform);
 	B_SetVisuals_Wolf();

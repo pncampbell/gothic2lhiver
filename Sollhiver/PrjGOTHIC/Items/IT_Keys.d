@@ -1,5 +1,8 @@
 
-const int Value_Lockpick = 10;
+// L'hiver 10, vanilla 1
+const int Value_Lockpick = 5;
+//
+
 const int Value_Key_01 = 3;
 const int Value_Key_02 = 3;
 const int Value_Key_03 = 3;

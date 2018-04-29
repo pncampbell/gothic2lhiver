@@ -5,10 +5,10 @@ prototype Mst_Default_Giant_Bug(C_Npc)
 	guild = GIL_GIANT_BUG;
 	aivar[AIV_MM_REAL_ID] = ID_GIANT_BUG;
 	level = 11;
-	attribute[ATR_STRENGTH] = 80;
-	attribute[ATR_DEXTERITY] = 80;
-	attribute[ATR_HITPOINTS_MAX] = 180;
-	attribute[ATR_HITPOINTS] = 180;
+	attribute[ATR_STRENGTH] = 50;
+	attribute[ATR_DEXTERITY] = 50;
+	attribute[ATR_HITPOINTS_MAX] = 130;
+	attribute[ATR_HITPOINTS] = 130;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 40;
@@ -45,10 +45,10 @@ instance YGiant_Bug(Mst_Default_Giant_Bug)
 {
 	name[0] = "Young field raider";
 	level = 5;
-	attribute[ATR_STRENGTH] = 30;
-	attribute[ATR_DEXTERITY] = 30;
-	attribute[ATR_HITPOINTS_MAX] = 100;
-	attribute[ATR_HITPOINTS] = 100;
+	attribute[ATR_STRENGTH] = 20;
+	attribute[ATR_DEXTERITY] = 20;
+	attribute[ATR_HITPOINTS_MAX] = 50;
+	attribute[ATR_HITPOINTS] = 50;
 	protection[PROT_BLUNT] = 10;
 	protection[PROT_EDGE] = 10;
 	protection[PROT_POINT] = 10;
@@ -65,10 +65,10 @@ instance YGiant_Bug_VinoRitual1(Mst_Default_Giant_Bug)
 {
 	name[0] = "Young field raider";
 	level = 5;
-	attribute[ATR_STRENGTH] = 30;
+	attribute[ATR_STRENGTH] = 20;
 	attribute[ATR_DEXTERITY] = 10;
-	attribute[ATR_HITPOINTS_MAX] = 100;
-	attribute[ATR_HITPOINTS] = 100;
+	attribute[ATR_HITPOINTS_MAX] = 40;
+	attribute[ATR_HITPOINTS] = 40;
 	protection[PROT_BLUNT] = 10;
 	protection[PROT_EDGE] = 10;
 	protection[PROT_POINT] = 10;
@@ -85,10 +85,10 @@ instance YGiant_Bug_VinoRitual2(Mst_Default_Giant_Bug)
 {
 	name[0] = "Young field raider";
 	level = 4;
-	attribute[ATR_STRENGTH] = 30;
+	attribute[ATR_STRENGTH] = 20;
 	attribute[ATR_DEXTERITY] = 10;
-	attribute[ATR_HITPOINTS_MAX] = 100;
-	attribute[ATR_HITPOINTS] = 100;
+	attribute[ATR_HITPOINTS_MAX] = 50;
+	attribute[ATR_HITPOINTS] = 50;
 	protection[PROT_BLUNT] = 0;
 	protection[PROT_EDGE] = 0;
 	protection[PROT_POINT] = 0;
@@ -143,7 +143,7 @@ instance Lobarts_Giant_Bug7(Mst_Default_Giant_Bug)
 	Npc_SetToFistMode(self);
 };
 
-instance giant_bugtransform(Mst_Default_Giant_Bug)
+instance GIANT_BUGTRANSFORM(Mst_Default_Giant_Bug)
 {
 	Npc_PercEnable(self,PERC_ASSESSSURPRISE,b_stopmagictransform);
 	B_SetVisuals_Giant_Bug();

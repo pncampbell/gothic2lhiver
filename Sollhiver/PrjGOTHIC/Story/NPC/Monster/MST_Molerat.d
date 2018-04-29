@@ -5,10 +5,10 @@ prototype Mst_Default_Molerat(C_Npc)
 	guild = GIL_MOLERAT;
 	aivar[AIV_MM_REAL_ID] = ID_MOLERAT;
 	level = 5;
-	attribute[ATR_STRENGTH] = 55;
-	attribute[ATR_DEXTERITY] = 55;
-	attribute[ATR_HITPOINTS_MAX] = 120;
-	attribute[ATR_HITPOINTS] = 120;
+	attribute[ATR_STRENGTH] = 35;
+	attribute[ATR_DEXTERITY] = 35;
+	attribute[ATR_HITPOINTS_MAX] = 75;
+	attribute[ATR_HITPOINTS] = 75;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 25;

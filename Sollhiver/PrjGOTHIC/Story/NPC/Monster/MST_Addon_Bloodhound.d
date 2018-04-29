@@ -7,8 +7,8 @@ prototype Mst_Default_Bloodhound(C_Npc)
 	level = 22;
 	attribute[ATR_STRENGTH] = 90;
 	attribute[ATR_DEXTERITY] = 90;
-	attribute[ATR_HITPOINTS_MAX] = 280;
-	attribute[ATR_HITPOINTS] = 280;
+	attribute[ATR_HITPOINTS_MAX] = 240;
+	attribute[ATR_HITPOINTS] = 240;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 90;

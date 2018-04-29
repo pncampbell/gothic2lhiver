@@ -288,7 +288,9 @@ const float RANGED_CHANCE_MAXDIST = 4500;
 const int NPC_ANGRY_TIME = 120;
 const int HAI_TIME_UNCONSCIOUS = 20;
 const int NPC_TIME_FOLLOW = 10;
-const int NPC_MINIMAL_DAMAGE = 25;
+// l'hiver 25 - WTF ? - set back to sensible value
+const int NPC_MINIMAL_DAMAGE = 10;
+//
 const int NPC_MINIMAL_PERCENT = 10;
 const int FAI_HUMAN_COWARD = 2;
 const int FAI_HUMAN_NORMAL = 42;
@@ -331,7 +333,9 @@ const int LOOP_CONTINUE = 0;
 const int LOOP_END = 1;
 const int DEFAULT = 0;
 const int LP_PER_LEVEL = 10;
-const int HP_PER_LEVEL = 5;
+// l'hiver 5 vanilla 10
+const int HP_PER_LEVEL = 8;
+//
 const int XP_PER_VICTORY = 10;
 const int NPCTYPE_AMBIENT = 0;
 const int npctype_main = 1;
@@ -435,7 +439,7 @@ const int Face_P_Weak_Ulf_Wohlers = 57;
 const int Face_N_Important_Arto = 58;
 const int Face_N_ImportantGrey = 59;
 const int Face_N_ImportantOld = 60;
-const int Face_N_Tough_Lee_ähnlich = 61;
+const int Face_N_Tough_Lee_ï¿½hnlich = 61;
 const int Face_N_Tough_Skip = 62;
 const int Face_N_ToughBart01 = 63;
 const int Face_N_Tough_Okyl = 64;

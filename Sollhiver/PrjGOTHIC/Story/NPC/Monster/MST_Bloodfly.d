@@ -5,10 +5,11 @@ prototype Mst_Default_Bloodfly(C_Npc)
 	guild = GIL_BLOODFLY;
 	aivar[AIV_MM_REAL_ID] = ID_BLOODFLY;
 	level = 5;
-	attribute[ATR_STRENGTH] = 40;
-	attribute[ATR_DEXTERITY] = 40;
-	attribute[ATR_HITPOINTS_MAX] = 100;
-	attribute[ATR_HITPOINTS] = 100;
+	attribute[ATR_STRENGTH] = 30;
+	attribute[ATR_DEXTERITY] = 30;
+	// l'hiver 100 HP lol
+	attribute[ATR_HITPOINTS_MAX] = 60;
+	attribute[ATR_HITPOINTS] = 60;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 20;

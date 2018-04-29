@@ -7,8 +7,8 @@ prototype Mst_Default_Minecrawler(C_Npc)
 	level = 12;
 	attribute[ATR_STRENGTH] = 100;
 	attribute[ATR_DEXTERITY] = 100;
-	attribute[ATR_HITPOINTS_MAX] = 220;
-	attribute[ATR_HITPOINTS] = 220;
+	attribute[ATR_HITPOINTS_MAX] = 200;
+	attribute[ATR_HITPOINTS] = 200;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
 	protection[PROT_BLUNT] = 60;

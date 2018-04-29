@@ -7,7 +7,7 @@ prototype Mst_Default_Gobbo_Skeleton(C_Npc)
 	level = 16;
 	attribute[ATR_STRENGTH] = 80;
 	attribute[ATR_DEXTERITY] = 80;
-	attribute[ATR_HITPOINTS_MAX] = 175;
+	attribute[ATR_HITPOINTS_MAX] = 150;
 	attribute[ATR_HITPOINTS] = 175;
 	attribute[ATR_MANA_MAX] = 0;
 	attribute[ATR_MANA] = 0;
