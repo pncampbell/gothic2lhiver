@@ -12,7 +12,8 @@ instance PAL_251_Oric(Npc_Default)
 	EquipItem(self,ItMw_2h_Pal_Sword);
 	EquipItem(self,ItRw_Mil_Crossbow);
 	B_CreateAmbientInv(self);
-	B_SetNpcVisual(self,MALE,"Hum_Head_Fighter",Face_N_Tough_Lee_ähnlich,BodyTex_N,ItAr_PAl_H);
+	// dear germans - please don't put dodgy unicode characters in scripts :-)
+	B_SetNpcVisual(self,MALE,"Hum_Head_Fighter",Face_N_Tough_Lee_hnlich,BodyTex_N,ItAr_PAl_H);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	B_GiveNpcTalents(self);
