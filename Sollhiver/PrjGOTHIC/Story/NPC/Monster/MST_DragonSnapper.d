@@ -49,7 +49,7 @@ instance Gaans_Snapper(Mst_Default_DragonSnapper)
 	Npc_SetToFistMode(self);
 };
 
-instance DRAGONSNAPPERTRANSFORM(Mst_Default_DragonSnapper)
+instance dragonsnappertransform(Mst_Default_DragonSnapper)
 {
 	Npc_PercEnable(self,PERC_ASSESSSURPRISE,b_stopmagictransform);
 	B_SetVisuals_DragonSnapper();

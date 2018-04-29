@@ -69,7 +69,7 @@ instance BlackWolf(Mst_Default_Warg)
 	Npc_SetToFistMode(self);
 };
 
-instance WARGTRANSFORM(Mst_Default_Warg)
+instance wargtransform(Mst_Default_Warg)
 {
 	Npc_PercEnable(self,PERC_ASSESSSURPRISE,b_stopmagictransform);
 	B_SetVisuals_WARG();

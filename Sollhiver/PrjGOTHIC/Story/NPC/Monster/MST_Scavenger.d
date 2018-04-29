@@ -44,7 +44,7 @@ instance Scavenger(Mst_Default_Scavenger)
 	Npc_SetToFistMode(self);
 };
 
-instance SCAVENGERTRANSFORM(Mst_Default_Scavenger)
+instance scavengertransform(Mst_Default_Scavenger)
 {
 	Npc_PercEnable(self,PERC_ASSESSSURPRISE,b_stopmagictransform);
 	B_SetVisuals_Scavenger();

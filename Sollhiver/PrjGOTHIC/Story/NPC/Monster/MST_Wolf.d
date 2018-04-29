@@ -64,7 +64,7 @@ instance Summoned_Wolf(Mst_Default_Wolf)
 	Npc_SetToFistMode(self);
 };
 
-instance WOLFTRANSFORM(Mst_Default_Wolf)
+instance wolftransform(Mst_Default_Wolf)
 {
 	Npc_PercEnable(self,PERC_ASSESSSURPRISE,b_stopmagictransform);
 	B_SetVisuals_Wolf();

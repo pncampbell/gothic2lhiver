@@ -103,7 +103,7 @@ instance Lesser_Skeleton(Mst_Default_Skeleton)
 	EquipItem(self,ItMw_1h_MISC_Sword);
 };
 
-instance RAVEN_GUARD(Mst_Default_Skeleton)
+instance raven_guard(Mst_Default_Skeleton)
 {
 	name[0] = "Raven's guard";
 	aivar[AIV_EnemyOverride] = FALSE;

@@ -97,7 +97,7 @@ instance Balthasar_Sheep3(Mst_Default_Sheep)
 	aivar[AIV_MM_RoamStart] = OnlyRoutine;
 };
 
-instance SHEEPTRANSFORM(Mst_Default_Sheep)
+instance sheeptransform(Mst_Default_Sheep)
 {
 	Npc_PercEnable(self,PERC_ASSESSSURPRISE,b_stopmagictransform);
 	B_SetVisuals_Sheep();

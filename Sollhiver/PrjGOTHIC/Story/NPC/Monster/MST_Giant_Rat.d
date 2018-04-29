@@ -64,7 +64,7 @@ instance YGiant_Rat(Mst_Default_Giant_Rat)
 	Npc_SetToFistMode(self);
 };
 
-instance GIANT_RATTRANSFORM(Mst_Default_Giant_Rat)
+instance giant_rattransform(Mst_Default_Giant_Rat)
 {
 	Npc_PercEnable(self,PERC_ASSESSSURPRISE,b_stopmagictransform);
 	B_SetVisuals_Giant_Rat();

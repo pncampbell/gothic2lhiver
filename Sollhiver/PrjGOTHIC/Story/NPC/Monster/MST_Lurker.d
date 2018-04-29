@@ -107,7 +107,7 @@ instance BeachLurker3(Mst_Default_Lurker)
 	Npc_SetToFistMode(self);
 };
 
-instance LURKERTRANSFORM(Mst_Default_Lurker)
+instance lurkertransform(Mst_Default_Lurker)
 {
 	Npc_PercEnable(self,PERC_ASSESSSURPRISE,b_stopmagictransform);
 	B_SetVisuals_Lurker();
